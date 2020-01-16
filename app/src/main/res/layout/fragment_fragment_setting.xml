@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/colorPrimary"
+    android:background="?attr/primaryColor"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragment_setting">
@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/futur"
                 android:text="General"
-                android:textColor="@color/colorAccent"
+                android:textColor="?attr/accentColor"
                 android:textSize="20dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="15dp" />
@@ -46,7 +46,7 @@
                 android:layout_marginLeft="15dp"
                 android:textSize="17dp"
                 android:fontFamily="@font/futur"
-                android:textColor="@color/colorPrimary"
+                android:textColor="?attr/primaryColor"
                 android:text="Theme" />
 
             <TextView
@@ -57,7 +57,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginLeft="15dp"
                 android:fontFamily="@font/futur"
-                android:textColor="@color/colorPrimary"
+                android:textColor="?attr/primaryColor"
                 android:textSize="17dp"
                 android:text="Background" />
 
@@ -67,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textView8"
                 android:text="Dashboard"
-                android:textColor="@color/colorAccent"
+                android:textColor="?attr/accentColor"
                 android:fontFamily="@font/futur"
                 android:textSize="20dp"
                 android:layout_marginLeft="15dp"
@@ -81,7 +81,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="15dp"
                 android:fontFamily="@font/futur"
-                android:textColor="@color/colorPrimary"
+                android:textColor="?attr/primaryColor"
                 android:textSize="17dp"
                 android:text="Today" />
 
@@ -93,7 +93,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginLeft="15dp"
                 android:fontFamily="@font/futur"
-                android:textColor="@color/colorPrimary"
+                android:textColor="?attr/primaryColor"
                 android:textSize="17dp"
                 android:text="Tomorrow" />
 
@@ -105,7 +105,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginLeft="15dp"
                 android:fontFamily="@font/futur"
-                android:textColor="@color/colorPrimary"
+                android:textColor="?attr/primaryColor"
                 android:textSize="17dp"
                 android:text="Next Week" />
 
@@ -116,7 +116,7 @@
                 android:fontFamily="@font/futur"
                 android:text="Localization"
                 android:layout_below="@+id/textView12"
-                android:textColor="@color/colorAccent"
+                android:textColor="?attr/accentColor"
                 android:textSize="20dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="20dp" />
@@ -128,7 +128,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginLeft="15dp"
                 android:fontFamily="@font/futur"
-                android:textColor="@color/colorPrimary"
+                android:textColor="?attr/primaryColor"
                 android:textSize="17dp"
                 android:text="City" />
 
@@ -140,7 +140,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginLeft="15dp"
                 android:fontFamily="@font/futur"
-                android:textColor="@color/colorPrimary"
+                android:textColor="?attr/primaryColor"
                 android:textSize="17dp"
                 android:text="Language" />
             <TextView
@@ -151,7 +151,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginLeft="15dp"
                 android:fontFamily="@font/futur"
-                android:textColor="@color/colorPrimary"
+                android:textColor="?attr/primaryColor"
                 android:textSize="17dp"
                 android:text="24-Hour Format" />
 
@@ -163,7 +163,7 @@
                 android:layout_alignEnd="@+id/textView10"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="-220dp"
-                android:shadowColor="@color/colorPrimary"/>
+                android:shadowColor="?attr/primaryColor"/>
 
             <Switch
                 android:id="@+id/switch3"
@@ -190,7 +190,7 @@
                 android:layout_alignEnd="@+id/textView12"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="-175dp"
-                android:backgroundTintMode="@color/colorPrimary"/>
+                android:backgroundTintMode="?attr/primaryColor"/>
 
             <TextView
                 android:id="@+id/textViewTheme"
@@ -203,7 +203,7 @@
                 android:fontFamily="@font/futur"
                 android:textSize="20dp"
                 android:text=">"
-                android:textColor="@color/colorPrimary" />
+                android:textColor="?attr/primaryColor" />
 
             <TextView
                 android:id="@+id/textViewBackground"
@@ -216,7 +216,7 @@
                 android:layout_toEndOf="@+id/textView8"
                 android:fontFamily="@font/futur"
                 android:text=">"
-                android:textColor="@color/colorPrimary" />
+                android:textColor="?attr/primaryColor" />
 
             <TextView
                 android:id="@+id/textViewCity"
@@ -228,7 +228,7 @@
                 android:layout_toEndOf="@+id/textView8"
                 android:fontFamily="@font/futur"
                 android:text=">"
-                android:textColor="@color/colorPrimary"
+                android:textColor="?attr/primaryColor"
                 android:textSize="20dp"/>
 
             <TextView
@@ -243,7 +243,7 @@
                 android:fontFamily="@font/futur"
                 android:text=">"
                 android:textSize="20dp"
-                android:textColor="@color/colorPrimary" />
+                android:textColor="?attr/primaryColor" />
         </RelativeLayout>
         </androidx.core.widget.NestedScrollView>
 
@@ -258,6 +258,6 @@
         android:ems="10"
         android:fontFamily="@font/futur"
         android:text="SETTINGS"
-        android:textColor="@color/colorAccent"
+        android:textColor="?attr/accentColor"
         android:textSize="20dp" />
 </RelativeLayout>

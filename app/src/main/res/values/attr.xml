@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="da">
+        <attr name="primaryColor" format="color" />
+        <attr name="secondaryColor" format="color" />
+        <attr name="accentColor" format="color" />
+        <attr name="accentColor2" format="color" /> 
+    </declare-styleable>
+
+</resources>
