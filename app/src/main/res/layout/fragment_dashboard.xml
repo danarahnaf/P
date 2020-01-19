@@ -1,103 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
-    <ImageView
-        android:id="@+id/imageView"
+    android:background="@drawable/gradient_bg">
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/bg" />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/text_dashboard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="25dp"
-        android:ems="10"
-        android:fontFamily="@font/futur"
-        android:text="DASHBOARD"
-        android:textColor="?attr/accentColor"
-        android:textSize="20dp"  />
+        <RelativeLayout
+            android:id="@+id/form_layout"
+            android:layout_width="match_parent"
+            android:layout_height="700sp">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/text_dashboard"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="40dp"
-        android:text="MONDAY"
-        android:textColor="#eeeeee"
-        android:textSize="25dp"
-        android:fontFamily="@font/futur"/>
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="20sp"
+                android:ems="10"
+                android:fontFamily="@font/futur"
+                android:text="@string/title_dashboard"
+                android:textColor="?attr/accentColor2"
+                android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:layout_marginTop="0dp"
-        android:text="25 November 2019"
-        android:layout_marginLeft="25dp"
-        android:textColor="#eeeeee"
-        android:textSize="17dp"
-        android:fontFamily="@font/futuramediumbt"/>
+            <TextView
+                android:id="@+id/textDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="50sp"
+                android:layout_alignTop="@id/textTitle"
+                android:ems="10"
+                android:fontFamily="@font/futur"
+                android:text="MONDAY"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView3"
-        android:layout_marginTop="40dp"
-        android:text="Today"
-        android:layout_marginLeft="25dp"
-        android:textColor="#eeeeee"
-        android:textSize="20dp"
-        android:fontFamily="@font/futur"/>
+            <TextView
+                android:id="@+id/textDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/textDay"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="25sp"
+                android:ems="10"
+                android:fontFamily="@font/futurabookfont"
+                android:text="17 December 2019"
+                android:textColor="?attr/titleTextColor"
+                android:textSize="18sp" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_below="@+id/textView4"
-        android:layout_marginTop="10dp"
-        app:cardCornerRadius="6dp"
-        android:minHeight="100dp"
-        android:layout_centerInParent="true"/>
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="25dp"
-        android:layout_below="@+id/cardview"
-        android:layout_marginTop="25dp"
-        android:text="Tomorrow"
-        android:layout_marginLeft="25dp"
-        android:textColor="#eeeeee"
-        android:textSize="20dp"
-        android:fontFamily="@font/futur" />
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardview2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_below="@+id/textView5"
-        android:layout_marginTop="10dp"
-        app:cardCornerRadius="6dp"
-        android:minHeight="100dp"
-        android:layout_centerInParent="true"/>
-
-
+            <View
+                android:id="@+id/view"
+                android:layout_marginTop="150sp"
+                android:layout_width="match_parent"
+                android:layout_height="300sp"
+                android:layout_marginHorizontal="20sp"
+                android:background="@drawable/rounded"/>
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>

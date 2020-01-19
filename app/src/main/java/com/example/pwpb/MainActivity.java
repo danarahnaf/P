@@ -24,9 +24,9 @@ public class MainActivity extends AppCompatActivity {
             case "2":
                 setTheme(R.style.Theme2);
                 break;
-            case "3":
-                setTheme(R.style.Theme3);
-                break;
+//            case "3":
+//                setTheme(R.style.Theme3);
+//                break;
         }
 
         super.onCreate(savedInstanceState);
