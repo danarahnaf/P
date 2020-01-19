@@ -25,7 +25,7 @@ public class navigatorview extends AppCompatActivity implements BottomNavigation
 
     // method untuk load fragment yang sesuai
     private boolean loadFragment(Fragment fragment) {
-        if (fragment != null) {
+        if (fragment != null) { 
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.fl_container, fragment)
                     .commit();
